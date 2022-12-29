@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 import { Link } from "react-router-dom";
 
-// import Button from 'react-bootstrap/Button';
 import { Button, Form } from 'react-bootstrap';
 
 import './login-view.scss';
@@ -15,7 +14,6 @@ export function LoginView(props) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  //From midway through 3.6 - below is me 'Declaring a hook for each input
   const [usernameErr, setUsernameErr] = useState('');
   const [passwordErr, setPasswordErr] = useState('');
 
@@ -64,14 +62,12 @@ export function LoginView(props) {
       <Form.Group controlId="formUsername">
         <Form.Label>Username:</Form.Label>
         <Form.Control type="text" placeholder="Enter Username" value={username} onChange={e => setUsername(e.target.value)} />
-        {/*Code apparently added here for displaying validation error. or is that whats just below?*/}
         {usernameErr && <p>{usernameErr}</p>}
       </Form.Group>
 
       <Form.Group controlId="formPassword">
         <Form.Label>Password:</Form.Label>
         <Form.Control type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
-        {/*As before, code here for displaying validation error.*/}
         {passwordErr && <p>{passwordErr}</p>}
       </Form.Group>
       <Button className="loginButton" variant="success" type="submit" onClick={handleSubmit}>

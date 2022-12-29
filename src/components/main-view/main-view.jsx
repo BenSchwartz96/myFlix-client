@@ -14,8 +14,6 @@ import { Menubar } from '../navbar/navbar';
 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container'
 
 import './main-view.scss';
 
@@ -134,9 +132,6 @@ export class MainView extends React.Component {
                 <RegistrationView />
               </Col>
             }} />
-
-
-            {/* For each of these paths will need the statement to check if theres a user, and render loginview if there isnt */}
 
 
             <Route path="/profile/:user" render={({ history }) => {

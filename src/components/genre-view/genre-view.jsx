@@ -1,10 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import axios from 'axios';
-
-import { Button, Card, Container } from 'react-bootstrap';
-
-import { Link } from "react-router-dom";
 
 import './genre-view.scss';
 

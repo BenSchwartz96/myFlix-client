@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
-
 import { Button, Card, Form, Container } from 'react-bootstrap';
-
-import { Link } from "react-router-dom";
 
 import './user-view.scss';
 
@@ -59,7 +56,7 @@ export function UserView(props) {
       setEmailErr('Email Required');
       isReq = false;
     } else if (email.indexOf('@') === -1) {
-      setEmail('Email is invalid');   // Include more proper/robust email validation logic later. also, setEmail or setEmailErr?
+      setEmail('Email is invalid');   
       isReq = false;
     }
 
