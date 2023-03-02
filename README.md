@@ -15,7 +15,7 @@ Live demo [_here_](https://bms-myflix.netlify.app/).
 ## Technologies
 
 - React
-- Typescript
+- Javascript
 - HTML
 - CSS
 - Javascript, Node.js, Express, MongoDB, and Mongoose for the API
